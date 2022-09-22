@@ -11,7 +11,7 @@ function Home() {
       <h3 className="font-sans font-bold text-xl text-[#8d120d] mb-10">
         Qual a boa de hoje?
       </h3>
-      <HomeButton title="Cadastrar" linkTo="/" />
+      <HomeButton title="Cadastrar" linkTo="/register" />
       <HomeButton title="Conhecer Delivery" linkTo="/" />
       <HomeButton title="Login" linkTo="/login" />
     </div>
