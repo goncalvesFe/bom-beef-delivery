@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input-default {
+    @apply w-full h-12 bg-zinc-200 focus:bg-zinc-300 mt-2 mb-2 rounded-md border-2 border-spacing-0 border-[#8d120d] text-[#8d120d] text-center;
+  }
+}

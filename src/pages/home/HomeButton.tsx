@@ -1,13 +1,18 @@
+import { Link } from 'react-router-dom'
+
 interface HomeButtonProps {
-  title: String
+  title: string
+  linkTo: string
 }
 
 function HomeButton(props: HomeButtonProps) {
-  const { title } = props
+  const { title, linkTo } = props
   return (
-    <button className="w-72 rounded-lg h-14 text-slate-200 text-xl font-medium bg-[#8d120d] mb-5">
-      {title}
-    </button>
+    <Link to={linkTo}>
+      <button className="w-72 rounded-lg h-14 text-slate-200 text-xl font-medium bg-[#8d120d] mb-5">
+        {title}
+      </button>
+    </Link>
   )
 }
 
